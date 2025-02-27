@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.hero {
+	width: 100%;
+	background-color: var(--bg-overlay-color);
+	color: var(--white);
+}
+
+.hero .d-grid {
+	justify-items: center;
+}
+
+.hero .d-grid>* {
+	grid-area: 1/1/1/1;
+}
+
+.company {
+	font-family: poppins-extralight, poppins, sans-serif;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.image-text {
+	font-family: poppins-extralight, poppins, sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	margin-left: -5px;
+}
+
+.title {
+	font-family: poppins-extralight, poppins, sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+}
+
+.subtitle {
+	font-family: poppins-extralight, poppins, sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+/* Media query per schermi fino a 576px */
+@media screen and (max-width: 576px) {
+	.company {
+		font-size: 12px;
+		text-align: center;
+	}
+	.title {
+		font-size: 35px;
+		text-align: center;
+	}
+	.subtitle {
+		font-size: 23px;
+		text-align: center;
+	}
+}
+
+/* Media query per schermi tra 576px e 1024px */
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+	.image-text {
+		font-size: 26px;
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_components_maps",
+  "info": {
+    "displayName": "Map"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.times {
+    color: var(--bg-color);
+}
+
+.custom-table {
+    font-size: 19px;
+    border-radius: 10px;
+    overflow: hidden; /* Mantiene il bordo arrotondato */
+    border: 1px solid #ddd; /* Bordo esterno */
+    border-collapse: separate; /* Evita la sovrascrittura del bordo esterno */
+    border-spacing: 0; /* Elimina gli spazi tra le celle */
+}
+
+/* Rimuove i bordi interni */
+.custom-table td {
+    border: none !important;
+    padding: 8px;
+}
+
+/* Arrotonda solo gli angoli esterni della tabella */
+.custom-table tr:first-child td:first-child { 
+    border-top-left-radius: 10px;
+}
+.custom-table tr:first-child td:last-child { 
+    border-top-right-radius: 10px;
+}
+.custom-table tr:last-child td:first-child { 
+    border-bottom-left-radius: 10px;
+}
+custom-table tr:last-child td:last-child { 
+    border-bottom-right-radius: 10px;
+}

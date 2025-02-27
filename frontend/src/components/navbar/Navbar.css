@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar base style */
+.navbar {
+  width: 100%; /* Imposta la larghezza della navbar a pieno schermo */
+  background-color: var(--bg-overlay-color); /* Imposta il colore di sfondo della navbar */
+  color: var(--white); /* Colore del testo */
+}
+
+.navbar-item.selected {
+  background-color: var(--bg-color); /* Cambia il colore di sfondo quando è stata selezionata una voce del navbar */
+}
+
+/* Stile dei link all'interno delle voci del menu */
+.navbar .navbar-item a {
+  color: var(--white); /* Colore del testo dei link */
+  font-weight: 300; /* Peso del font */
+  text-decoration: none; /* Rimuove la sottolineatura dei link */
+  display: block; /* Fa sì che i link occupino tutta la larghezza della voce del menu */
+  white-space: nowrap; /* Impedisce il ritorno a capo del testo */
+}
+
+/* Allineamento e comportamento delle voci del menu */
+.navbar .navbar-item {
+  flex: 1;
+  text-align: center;
+  transition: all 0.8s; /* Aggiunge una transizione per il cambiamento di stato */
+  position: relative; /* Posizione relativa per gestire il sottomenù */
+}
+
+/* Stile quando si passa sopra o si fa clic su una voce del menu */
+.navbar .navbar-item:hover,
+.navbar .navbar-item:active {
+  background-color: var(--bg-color); /* Cambia il colore di sfondo quando è attivo o al passaggio del mouse */
+  transition: all 0.8s; /* Transizione visiva */
+}
+
+/* Aggiunge un margine superiore al primo elemento <li> */
+.navbar-item .sub-list li:first-child {
+  margin-top: 7px; /* Aggiungi il margine superiore che desideri */
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 1024px) {
+  /* Disposizione della navbar su schermi piccoli, disposta in colonna */
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Stile per la freccia accanto ai menu con sottovoci */
+  .navbar-item .menu-toggle {
+    cursor: pointer; /* Cambia il cursore in "mano" sopra la freccia */
+    color: var(--white); /* Colore della freccia */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    outline: none; /* Rimuove il contorno di focus */
+    display: inline-block; /* Mostra la freccia su dispositivi mobili */
+    margin-left: 10px; /* Aggiunge spazio tra il testo e la freccia */
+  }
+
+  /* Stile della freccia quando è in focus */
+  .navbar-item .menu-toggle:focus {
+    color: var(--white); /* Colore della freccia quando è in focus */
+    outline: none; /* Rimuove il contorno di focus */
+  }
+
+  /* Stile della freccia quando si passa sopra con il mouse */
+  .navbar-item .menu-toggle:hover {
+    color: var(--white); /* Mantiene il colore della freccia al passaggio del mouse */
+  }
+
+  /* Stile per l'icona hamburger del menu mobile */
+  .mobile-menu-toggle {
+    display: block; /* Mostra il bottone hamburger */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1rem auto; /* Centra l'icona */
+    color: white;
+  }
+
+  /* Disposizione delle voci del menu su dispositivi mobili */
+  .navbar-item {
+    width: 100%;
+    text-align: center; 
+  }
+
+  /* Dimensione del font per le voci del menu su dispositivi mobili */
+  .navbar-item a {
+    font-size: 18px;
+  }
+
+  /* Disposizione e allineamento del nome e della freccia per dispositivi mobili */
+  .navbar-item > div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Nasconde il menu di default su dispositivi mobili */
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Quando il menu è aperto, mostra le voci */
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  /* Rimuove i puntini dall'elenco delle sottovoci */
+  .sub-list {
+    list-style: none; /* Rimuove i puntini */
+    padding: 0; /* Rimuove il padding */
+    margin: 0; /* Rimuove il margine */
+    text-align: center; /* Allinea il testo al centro */
+  }
+
+  /* Stile degli elementi della lista */
+  .sub-list li {
+    padding: 0.5rem 1rem; /* Aggiunge uno spazio interno */
+  }
+
+  /* Aggiunge un margine superiore per l'ultimo elemento <li> */
+  .navbar-item .sub-list li:last-child {
+    padding-bottom: 0; /* Aggiungi il margine superiore che desideri */
+  }
+
+  .navbar .navbar-item {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Media query per desktop */
+@media (min-width: 1025px) {
+  /* Nasconde il simbolo del menu (hamburger) su schermi grandi */
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  /* Nascondi le frecce su desktop */
+  .navbar-item .menu-toggle {
+    display: none;
+  }
+
+  /* Disposizione orizzontale delle voci del menu su desktop */
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between; /* Aggiunge lo spazio tra gli elementi */
+    width: 100%;
+  }
+
+  /* Rimuove i puntini dall'elenco delle sottovoci */
+  .sub-list {
+    list-style: none; /* Rimuove i puntini */
+    padding: 0; /* Rimuove il padding */
+    margin: 0; /* Rimuove il margine */
+    position: absolute;
+    background-color: var(--bg-color); /* Colore di sfondo del sottomenù */
+    text-align: center; /* Allinea il testo al centro */
+    left: -30%; /* Aggiunge uno spostamento a sinistra */
+    top: 100%; /* Posiziona il sottomenù subito sotto la voce del menu */
+    z-index: 1000; /* Assicura che il sottomenù sia sopra gli altri elementi */
+  }
+
+  /* Stile degli elementi della lista */
+  .sub-list li {
+    padding: 0.3rem 1rem; /* Aggiunge uno spazio interno */
+    margin: 0;
+  }
+
+  /* Dimensione del font per le voci del menu su dispositivi desktop */
+  .navbar-item a {
+    font-size: calc(14px + 0.2vw); 
+  }
+
+  .navbar .navbar-item {
+    padding: 1rem calc(0.3rem + 0.1vw); /* Spazi più grandi per schermi grandi */
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_team_members",
+  "info": {
+    "displayName": "TeamMembers"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}

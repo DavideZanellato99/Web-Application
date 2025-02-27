@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_times",
+  "info": {
+    "displayName": "Times"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "text"
+    },
+    "tableTimes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.day-times"
+    }
+  }
+}

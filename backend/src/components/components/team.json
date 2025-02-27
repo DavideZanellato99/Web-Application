@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_teams",
+  "info": {
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.team-members"
+    }
+  }
+}

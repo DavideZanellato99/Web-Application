@@ -1,0 +1,22 @@
+.infection-component {
+    background-color: #95c799;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    color: #333;
+    transition: background-color 0.3s ease; /* Effetto di transizione */
+}
+
+/* Cambia il colore di sfondo quando il mouse passa sopra */
+.infection-component:hover {
+    background-color: #ffffff; 
+}
+
+/* Rimuove la sottolineatura dai link */
+.infection-link {
+    text-decoration: none;
+    display: block; /* Rende l'intero box cliccabile */
+}

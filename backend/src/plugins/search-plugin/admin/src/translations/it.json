@@ -1,0 +1,22 @@
+{
+  "plugin.name": "Cerca test",
+  "label.search": "Codice",
+  "input.search": "Inserisci il codice da cercare",
+  "button.search": "Cerca",
+  "results.title": "Risultati",
+  "details.title": "Dettaglio",
+  "label.code": "Codice",
+  "label.testname": "Test",
+  "label.testdescription": "Description",
+  "label.sex": "Sesso",
+  "label.age": "Età",
+  "label.ip": "Indirizzo IP",
+  "label.execution_time": "Data esecuzione",
+  "label.score": "Punteggio",
+  "label.questions": "Domande",
+  "label.revision_date": "Ultima revisione",
+  "label.note": "Annotazione",
+  "button.save": "Salva",
+  "notification.success": "Nota aggiunta correttamente",
+  "notification.failed": "Aggiunta della nota fallita"
+}

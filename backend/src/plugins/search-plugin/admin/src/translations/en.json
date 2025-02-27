@@ -1,0 +1,22 @@
+{
+  "plugin.name": "Search test",
+  "label.search": "Code",
+  "input.search": "Code to search",
+  "button.search": "Search",
+  "results.title": "Results",
+  "details.title": "Details",
+  "label.code": "Code",
+  "label.testname": "Test",
+  "label.testdescription": "Descrizione",
+  "label.sex": "Sex",
+  "label.age": "Age",
+  "label.ip": "IP Address",
+  "label.execution_time": "Execution time",
+  "label.score": "Score",
+  "label.questions": "Questions",
+  "label.revision_date": "Last revision",
+  "label.note": "Note",
+  "button.save": "Save",
+  "notification.success": "Nota added correctly",
+  "notification.failed": "Adding note failed"
+}

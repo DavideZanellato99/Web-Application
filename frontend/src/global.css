@@ -1,0 +1,11 @@
+:root {
+	--bg-overlay-color: rgb(43, 108, 163);
+	--bg-color: rgb(0, 52, 73);
+	--white: rgb(255, 255, 255);
+}
+
+body {
+	margin: 0;
+	background-color: red;
+	overflow: scroll;
+}

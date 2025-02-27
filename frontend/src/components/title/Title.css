@@ -1,0 +1,24 @@
+.title-component {
+    background-color: var(--bg-color);
+    color: var(--white);
+    font-family: poppins-extralight, poppins, sans-serif;
+    font-size: 42px;
+}
+
+.title-align-center {
+    text-align: center;
+}
+
+.title-align-right {
+    text-align: right;
+}
+
+.title-align-left {
+    text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+    .title-component {
+        font-size: 21px;
+    }
+}

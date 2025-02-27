@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_titles",
+  "info": {
+    "displayName": "Title",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left ",
+        "center ",
+        "right"
+      ]
+    }
+  }
+}

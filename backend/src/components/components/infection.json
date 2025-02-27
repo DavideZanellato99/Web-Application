@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_components_infections",
+  "info": {
+    "displayName": "Infection"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}
