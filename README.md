@@ -8,20 +8,13 @@ Al fine velocizzare lo sviluppo, sopratutto nell'ambito del responsive, abbiamo 
 
 Inoltre l'applicazione si sviluppa in due parti:
 - **sito**: costituito da una pagina dinamica
-- **quiz**: ???
+- **quiz**: la pagina del quiz implementenza un componente che richiede casuale un test al backend
 
 ## Dynamic Page
 
 All'inizio dello sviluppo, abbiamo creato il componente Hero e Navbar che sono presenti in tutte le pagine; successivamente, vedendo che il contenuto delle varie pagine è dinamico e dato che nelle specifiche è detto che di gestirli come articoli/documenti, abbiamo pensato di creare una collection nel database di Strapi che memorizzasse i dati di una _Pagina_, composta da uno `slug`, un `title` e il `content`, dove il content è dell'HTML che viene iniettato nella pagina.
 
 Tuttavia abbiamo pensato che questo fosse poco utilizzabile e poco personalizzabile da una persona che non fosse esperta di HTML e CSS. Abbiamo quindi pensato di cambiare il campo `content` con un'array di di layout, dove ogni layout è composto da due DynamicZone, ognuna delle quali può contenere una serie di semplici componenti.
-I principali componenti che abbiamo realizzato sono:
-
-**Title**
-![alt text](./frontend/src/components/title/Title.png)
-
-**Text**
-![alt text](./frontend/src/components/text/Text.png)
 
 Il sito web è quindi composto da un'unica pagina dinamica, che tramire una apposita API in Strapi può effettuare la ricerca di una pagina filtrando per lo `slug`, quindi caricare dinamicamente la pagina.
 
